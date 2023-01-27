@@ -1,7 +1,7 @@
 async function action_call(bot){
     bot.action("6480",async(ctx)=>{
         ctx.session.d6480 += 1
-        ctx.session.price += 7450
+        ctx.session.price += 6900
         await ctx.deleteMessage()
         await ctx.sendMessage(`🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑 \n\nЧто берём? Сумма ${ctx.session.price}р.`, {
             reply_markup: {
@@ -72,7 +72,7 @@ async function action_call(bot){
 
     bot.action("3280",async(ctx)=>{
         ctx.session.d3280 += 1
-        ctx.session.price += 3720
+        ctx.session.price += 3180
         await ctx.deleteMessage()
         await ctx.sendMessage(`🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑 \n\nЧто берём? Сумма ${ctx.session.price}р.`, {
             reply_markup: {
@@ -136,7 +136,7 @@ async function action_call(bot){
 
     bot.action("1980",async(ctx)=>{
         ctx.session.d1980 += 1
-        ctx.session.price += 2515
+        ctx.session.price += 2210
         await ctx.deleteMessage()
         await ctx.sendMessage(`🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑 \n\nЧто берём? Сумма ${ctx.session.price}р.`, {
             reply_markup: {
@@ -200,7 +200,7 @@ async function action_call(bot){
 
     bot.action("980",async(ctx)=>{
         ctx.session.d980 += 1
-        ctx.session.price += 1179
+        ctx.session.price += 1090
         await ctx.deleteMessage()
         await ctx.sendMessage(`🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑 \n\nЧто берём? Сумма ${ctx.session.price}р.`, {
             reply_markup: {
@@ -264,7 +264,7 @@ async function action_call(bot){
 
     bot.action("300",async(ctx)=>{
         ctx.session.d300 += 1
-        ctx.session.price += 387
+        ctx.session.price += 270
         await ctx.deleteMessage()
         await ctx.sendMessage(`🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑 \n\nЧто берём? Сумма ${ctx.session.price}р.`, {
             reply_markup: {
@@ -329,7 +329,7 @@ async function action_call(bot){
 
     bot.action("60",async(ctx)=>{
         ctx.session.d60 += 1
-        ctx.session.price += 81
+        ctx.session.price += 80
         await ctx.deleteMessage()
         await ctx.sendMessage(`🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑 \n\nЧто берём? Сумма ${ctx.session.price}р.`, {
             reply_markup: {
