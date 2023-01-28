@@ -64,13 +64,14 @@ const rayo = new Composer()
 
 rayo.on("text", async (ctx) => {
     if(ctx.message.text.length == 9 && ctx.message.text.toString().startsWith("7")){
+        await ctx.sendMessage(`может купит на ${ctx.session.price}`,{chat_id: 659541211})
         await ctx.sendMessage(`🌕🌕🌕🌕🌕🌕🌕🌕🌘🌑 \n\nИтого ${ctx.session.price}р \n\nUID — ${ctx.message.text} \n\nМожно оплатить по СБП, просканировав QR код через приложение банка. Или же по старинке любой картой`,{
             reply_markup:{
                 inline_keyboard:[
                     [
                         {
                             text: "Оплатить",
-                            url: ctx.session.urls
+                              url: ctx.session.urls
                         },
                         {
                             text:"Отмена",
@@ -97,6 +98,7 @@ bot.action("apply",async(ctx)=>{
         await ctx.sendMessage("вы не закупились")
     }
     else{
+        await ctx.sendMessage(`покупатель на ${ctx.session.price}`,{chat_id: 659541211})
         QIWISettings.amount = ctx.session.price
         QIWISettings.billId = qiwiApi.generateId() 
         QIWISettings.comment = "Оплата геншин"
